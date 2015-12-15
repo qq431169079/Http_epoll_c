@@ -37,9 +37,9 @@ void read_analyze(int fd, char buf[])
 		}
 		idx++;
 	}		
-	if(strncmp(buf,"GET",3)&&strncmp(buf,"get",3)
+	if(strncmp(buf,"GET",3)&&strncmp(buf,"get",3))
 	{
-		err_response("Invalid Get operation!\n",bu)
+		err_response("Invalid Get operation!\n",bu);
 	}
 	
 }
